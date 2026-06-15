@@ -113,7 +113,7 @@ Citation metadata will be added when the public preprint is finalized.
 ```bibtex
 @article{phonebuddy2026,
   title   = {PhoneBuddy: Training Open Models for Agentic Phone Use},
-  author  = {Chenxin Li and Zhengyang Tang and others},
+  author  = {Zhengyang Tang and Xin Lai and Pengyuan Lyu and Xinyuan Wang and Tianyi Bai and Chenxin Li and Yiduo Guo and Huawen Shen and Yuxuan Liu and others},
   journal = {arXiv preprint},
   year    = {2026}
 }
