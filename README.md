@@ -63,8 +63,10 @@ The public model release follows the Qwen-style XML tool-call format defined in 
 **Takeaway.** Real-app RL substantially improves over SFT. Adding mock-app RL further improves the average result, with the strongest gains on single-app tasks and AndroidWorld.
 
 <p align="center">
-  <img src="assets/figures/benchmark.png" alt="PhoneBuddy benchmark coverage" width="48%">
-  <img src="assets/figures/rl_delta.png" alt="PhoneBuddy RL delta" width="48%">
+  <img src="assets/figures/benchmark.png" alt="PhoneBuddy benchmark coverage" width="70%">
+</p>
+<p align="center">
+  <img src="assets/figures/rl_delta.png" alt="PhoneBuddy RL delta" width="76%">
 </p>
 
 ---
