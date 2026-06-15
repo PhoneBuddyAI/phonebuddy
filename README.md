@@ -25,7 +25,7 @@
 
 ## 🚨 News
 
-- **2026-06-15**: 🤗 PhoneBuddy model release is being staged on Hugging Face: [PhoneBuddy-4B](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-4B).
+- **2026-06-15**: 🤗 PhoneBuddy models are public on Hugging Face: [PhoneBuddy-4B](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-4B), [PhoneBuddy-4B-RealApp](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-4B-RealApp), and [PhoneBuddy-0.8B](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-0.8B).
 - **2026-06-12**: 🌐 Project page launched: [phonebuddyai.github.io](https://phonebuddyai.github.io/).
 - **2026-06-11**: 📄 Paper snapshot and result figures added to the project page.
 - **2026-06-10**: 🧭 PhoneBuddy added to our broader phone-agent research gallery with PhoneWorld, PhoneHarness, PhonePrivacy, and PhoneSafety.
@@ -45,8 +45,8 @@ PhoneBuddy compares a shared SFT checkpoint, real-app RL, and mixed real+mock RL
 | Model | Status | Training Recipe | Notes |
 | --- | --- | --- | --- |
 | **PhoneBuddy-4B** | [HF Model](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-4B) | Real+Mock RL | Main checkpoint used for the headline release. |
-| **PhoneBuddy-4B-Real** | Staging | Real-only RL | Ablation checkpoint without mock-app RL. |
-| **PhoneBuddy-0.8B** | Staging | Real+Mock RL | Smaller checkpoint for lightweight experiments. |
+| **PhoneBuddy-4B-RealApp** | [HF Model](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-4B-RealApp) | Real-only RL | Ablation checkpoint without mock-app RL. |
+| **PhoneBuddy-0.8B** | [HF Model](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-0.8B) | Real+Mock RL | Smaller checkpoint for lightweight experiments. |
 
 The public model release follows the Qwen-style XML tool-call format defined in the model `chat_template.jinja`. Dataset artifacts are not planned for public release at this stage.
 
