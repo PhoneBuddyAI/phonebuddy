@@ -16,7 +16,7 @@
 
 <p>
   <a href="https://phonebuddyai.github.io/"><img src="https://img.shields.io/badge/🌐%20Project-PhoneBuddy-blue?style=for-the-badge"></a>
-  <a href="https://phonebuddyai.github.io/assets/paper.pdf"><img src="https://img.shields.io/badge/📄%20Paper-PDF-red?style=for-the-badge"></a>
+  <a href="https://arxiv.org/abs/2606.23049"><img src="https://img.shields.io/badge/📄%20Paper-arXiv-red?style=for-the-badge"></a>
   <a href="https://huggingface.co/PhoneBuddyAI/PhoneBuddy-4B"><img src="https://img.shields.io/badge/🤗%20Model-PhoneBuddy--4B-yellow?style=for-the-badge"></a>
 </p>
 
@@ -35,6 +35,7 @@
 
 ## 🚨 News
 
+- **2026-06-26**: 📄 arXiv preprint is live: [arXiv:2606.23049](https://arxiv.org/abs/2606.23049).
 - **2026-06-15**: 🤗 PhoneBuddy models are public on Hugging Face: [PhoneBuddy-4B](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-4B), [PhoneBuddy-4B-RealApp](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-4B-RealApp), and [PhoneBuddy-0.8B](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-0.8B).
 - **2026-06-12**: 🌐 Project page launched: [phonebuddyai.github.io](https://phonebuddyai.github.io/).
 - **2026-06-11**: 📄 Paper snapshot and result figures added to the project page.
@@ -87,7 +88,7 @@ PhoneBuddy is one piece of a larger phone-agent stack: environments, training, r
 
 | Tag | Project | Links | Role |
 | --- | --- | --- | --- |
-| **[Training]** | <img src="assets/phonebuddy_icon_cutout.png" alt="PhoneBuddy" width="18"> **PhoneBuddy** | [Project](https://phonebuddyai.github.io/) · [Paper](https://phonebuddyai.github.io/assets/paper.pdf) · [Code](https://github.com/PhoneBuddyAI/phonebuddy) · [4B](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-4B) · [4B-RealApp](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-4B-RealApp) · [0.8B](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-0.8B) | Trains open phone-use models with real-app RL and mock-app RL. |
+| **[Training]** | <img src="assets/phonebuddy_icon_cutout.png" alt="PhoneBuddy" width="18"> **PhoneBuddy** | [Project](https://phonebuddyai.github.io/) · [Paper](https://arxiv.org/abs/2606.23049) · [Code](https://github.com/PhoneBuddyAI/phonebuddy) · [4B](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-4B) · [4B-RealApp](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-4B-RealApp) · [0.8B](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-0.8B) | Trains open phone-use models with real-app RL and mock-app RL. |
 | **[Environment]** | 🌍 **PhoneWorld** | [Paper](https://arxiv.org/abs/2605.29486) · [中文 Blog](https://mp.weixin.qq.com/s/uzasS6q6LAwX8wLXD7KzeA) | Converts real GUI trajectories into scalable phone-use environments, tasks, verifiers, and rollouts. |
 | **[Runtime]** | 🛠️ **PhoneHarness** | [Project](https://phoneharness.github.io/) · [Paper](https://arxiv.org/abs/2606.14832) · [Code](https://github.com/PhoneHarness/phoneharness) · [Dataset](https://huggingface.co/datasets/PhoneHarness/phoneharness-bench) · [中文 Blog](https://mp.weixin.qq.com/s/I2ztL6sFiHGxAiCfh_FTqg?scene=1) | Mixed-action phone-agent harness and benchmark across CLI, GUI, and MCP tools with trace-backed verification. |
 | **[Privacy]** | 🔐 **PhonePrivacy** | [Paper](https://arxiv.org/abs/2604.00986) · [中文 Blog](https://mp.weixin.qq.com/s/0uqLRepCABA7ptOAPXjDZA) | Verifiable privacy benchmark for phone-use agents. |
@@ -120,14 +121,15 @@ phonebuddy/
 
 ## 📚 Citation
 
-Citation metadata will be added when the public preprint is finalized.
-
 ```bibtex
-@article{phonebuddy2026,
-  title   = {PhoneBuddy: Training Open Models for Agentic Phone Use},
-  author  = {Zhengyang Tang and Xin Lai and Pengyuan Lyu and Xinyuan Wang and Tianyi Bai and Chenxin Li and Yiduo Guo and Huawen Shen and Yuxuan Liu and others},
-  journal = {arXiv preprint},
-  year    = {2026}
+@misc{tang2026phonebuddytrainingopenmodels,
+      title={PhoneBuddy: Training Open Models for Agentic Phone Use},
+      author={Zhengyang Tang and Xin Lai and Pengyuan Lyu and Xinyuan Wang and Tianyi Bai and Chenxin Li and Yiduo Guo and Huawen Shen and Yuxuan Liu and Junyi Li and Zhengyao Fang and Yang Ding and Yi Zhang and Weinong Wang and Xingran Zhou and Liang Wu and Fei Tang and Sunqi Fan and Shangpin Peng and Zheng Ruan and Anran Zhang and Benyou Wang and Ji-Rong Wen and Rui Yan and Chengquan Zhang and Han Hu},
+      year={2026},
+      eprint={2606.23049},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2606.23049},
 }
 ```
 
