@@ -7,17 +7,19 @@
 ### Training Open Phone-Use Agents with Real-App and Mock-App RL
 
 <p>
-  <img src="assets/phonebuddy_icon_cutout.png" alt="PhoneBuddy" width="18"> <a href="https://phonebuddyai.github.io/"><b>PhoneBuddy</b></a> &nbsp;•&nbsp;
-  🌍 <a href="https://arxiv.org/abs/2605.29486"><b>PhoneWorld</b></a> &nbsp;•&nbsp;
-  🛠️ <a href="https://phoneharness.github.io/"><b>PhoneHarness</b></a> &nbsp;•&nbsp;
-  🔐 <a href="https://arxiv.org/abs/2604.00986"><b>PhonePrivacy</b></a> &nbsp;•&nbsp;
-  🛡️ <a href="https://arxiv.org/abs/2605.07630"><b>PhoneSafety</b></a>
+  <img src="assets/phonebuddy_icon_cutout.png" alt="PhoneBuddy" width="18"> <a href="https://github.com/PhoneBuddyAI/phonebuddy"><b>PhoneBuddy</b></a> &nbsp;•&nbsp;
+  🌍 <a href="https://github.com/EthanLeo-LYX/PhoneWorld"><b>PhoneWorld</b></a> &nbsp;•&nbsp;
+  🛠️ <a href="https://github.com/PhoneHarness/phoneharness"><b>PhoneHarness</b></a> &nbsp;•&nbsp;
+  🔐 <a href="https://github.com/FreedomIntelligence/MyPhoneBench"><b>PhonePrivacy</b></a> &nbsp;•&nbsp;
+  🛡️ <a href="https://github.com/tangzhy/PhoneSafety"><b>PhoneSafety</b></a>
 </p>
 
 <p>
+  <a href="https://github.com/PhoneBuddyAI/phonebuddy"><img src="https://img.shields.io/badge/💻%20Code-GitHub-2ea44f?style=for-the-badge"></a>
   <a href="https://phonebuddyai.github.io/"><img src="https://img.shields.io/badge/🌐%20Project-PhoneBuddy-blue?style=for-the-badge"></a>
-  <a href="https://arxiv.org/abs/2606.23049"><img src="https://img.shields.io/badge/📄%20Paper-arXiv-red?style=for-the-badge"></a>
   <a href="https://huggingface.co/PhoneBuddyAI/PhoneBuddy-4B"><img src="https://img.shields.io/badge/🤗%20Model-PhoneBuddy--4B-yellow?style=for-the-badge"></a>
+  <a href="https://arxiv.org/abs/2606.23049"><img src="https://img.shields.io/badge/📄%20Paper-arXiv-red?style=for-the-badge"></a>
+  <a href="https://github.com/EthanLeo-LYX/PhoneWorld"><img src="https://img.shields.io/badge/🌍%20PhoneWorld-Code-2ea44f?style=for-the-badge"></a>
 </p>
 
 <p>
@@ -35,6 +37,7 @@
 
 ## 🚨 News
 
+- **2026-08-24**: 🌍 [PhoneWorld](https://github.com/EthanLeo-LYX/PhoneWorld) is now publicly released for research, including the benchmark runner, 120 evaluation tasks, 300 verified training tasks, and the Research Source Edition for 34 mock apps. Research APKs are available through the [gated Hugging Face dataset](https://huggingface.co/datasets/EthanLeoLYX/PhoneWorld-APKs).
 - **2026-06-26**: 📄 arXiv preprint is live: [arXiv:2606.23049](https://arxiv.org/abs/2606.23049).
 - **2026-06-15**: 🤗 PhoneBuddy models are public on Hugging Face: [PhoneBuddy-4B](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-4B), [PhoneBuddy-4B-RealApp](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-4B-RealApp), and [PhoneBuddy-0.8B](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-0.8B).
 - **2026-06-12**: 🌐 Project page launched: [phonebuddyai.github.io](https://phonebuddyai.github.io/).
@@ -48,6 +51,18 @@
 Most mobile agents are evaluated as GUI controllers: observe a screen, tap, type, swipe, repeat. PhoneBuddy studies a training recipe for open phone-use models that can improve under real execution feedback while also benefiting from scalable mock-app supervision.
 
 PhoneBuddy compares a shared SFT checkpoint, real-app RL, and mixed real+mock RL. The mixed recipe uses PhoneWorld-style mock apps as resettable environments with automatic verifiers, then evaluates whether this scalable signal transfers back to real-phone tasks and AndroidWorld.
+
+---
+
+## 🌍 Get PhoneWorld
+
+[PhoneWorld](https://github.com/EthanLeo-LYX/PhoneWorld) is the environment stack behind PhoneBuddy's mock-app training. Its public research release includes the evaluation runner, task definitions and verifiers, 120 benchmark tasks, 300 verified training tasks, and the Research Source Edition for all 34 mock Android apps.
+
+- **Code, tasks, source apps, and setup:** [github.com/EthanLeo-LYX/PhoneWorld](https://github.com/EthanLeo-LYX/PhoneWorld)
+- **Research APKs:** [EthanLeoLYX/PhoneWorld-APKs](https://huggingface.co/datasets/EthanLeoLYX/PhoneWorld-APKs) — gated access for non-commercial academic research
+- **Paper:** [PhoneWorld: Scaling Phone-Use Agent Environments](https://arxiv.org/abs/2605.29486)
+
+Please follow the PhoneWorld repository's research license, APK access terms, and benchmark reporting guidance.
 
 ---
 
@@ -88,11 +103,11 @@ PhoneBuddy is one piece of a larger phone-agent stack: environments, training, r
 
 | Tag | Project | Links | Role |
 | --- | --- | --- | --- |
-| **[Training]** | <img src="assets/phonebuddy_icon_cutout.png" alt="PhoneBuddy" width="18"> **PhoneBuddy** | [Project](https://phonebuddyai.github.io/) · [Paper](https://arxiv.org/abs/2606.23049) · [Code](https://github.com/PhoneBuddyAI/phonebuddy) · [4B](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-4B) · [4B-RealApp](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-4B-RealApp) · [0.8B](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-0.8B) | Trains open phone-use models with real-app RL and mock-app RL. |
-| **[Environment]** | 🌍 **PhoneWorld** | [Paper](https://arxiv.org/abs/2605.29486) · [中文 Blog](https://mp.weixin.qq.com/s/uzasS6q6LAwX8wLXD7KzeA) | Converts real GUI trajectories into scalable phone-use environments, tasks, verifiers, and rollouts. |
-| **[Runtime]** | 🛠️ **PhoneHarness** | [Project](https://phoneharness.github.io/) · [Paper](https://arxiv.org/abs/2606.14832) · [Code](https://github.com/PhoneHarness/phoneharness) · [Dataset](https://huggingface.co/datasets/PhoneHarness/phoneharness-bench) · [中文 Blog](https://mp.weixin.qq.com/s/I2ztL6sFiHGxAiCfh_FTqg?scene=1) | Mixed-action phone-agent harness and benchmark across CLI, GUI, and MCP tools with trace-backed verification. |
-| **[Privacy]** | 🔐 **PhonePrivacy** | [Paper](https://arxiv.org/abs/2604.00986) · [中文 Blog](https://mp.weixin.qq.com/s/0uqLRepCABA7ptOAPXjDZA) | Verifiable privacy benchmark for phone-use agents. |
-| **[Safety]** | 🛡️ **PhoneSafety** | [Paper](https://arxiv.org/abs/2605.07630) · [Code](https://github.com/tangzhy/PhoneSafety) | Safety evaluation for phone-use agents, separating safety from incapability. |
+| **[Training]** | <img src="assets/phonebuddy_icon_cutout.png" alt="PhoneBuddy" width="18"> [**PhoneBuddy**](https://github.com/PhoneBuddyAI/phonebuddy) | [Code](https://github.com/PhoneBuddyAI/phonebuddy) · [Project](https://phonebuddyai.github.io/) · [Paper](https://arxiv.org/abs/2606.23049) · [4B](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-4B) · [4B-RealApp](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-4B-RealApp) · [0.8B](https://huggingface.co/PhoneBuddyAI/PhoneBuddy-0.8B) | Trains open phone-use models with real-app RL and mock-app RL. |
+| **[Environment]** | 🌍 [**PhoneWorld**](https://github.com/EthanLeo-LYX/PhoneWorld) | [Code](https://github.com/EthanLeo-LYX/PhoneWorld) · [APKs](https://huggingface.co/datasets/EthanLeoLYX/PhoneWorld-APKs) · [Paper](https://arxiv.org/abs/2605.29486) · [中文 Blog](https://mp.weixin.qq.com/s/uzasS6q6LAwX8wLXD7KzeA) | Converts real GUI trajectories into scalable phone-use environments, tasks, verifiers, and rollouts. |
+| **[Runtime]** | 🛠️ [**PhoneHarness**](https://github.com/PhoneHarness/phoneharness) | [Code](https://github.com/PhoneHarness/phoneharness) · [Project](https://phoneharness.github.io/) · [Dataset](https://huggingface.co/datasets/PhoneHarness/phoneharness-bench) · [Paper](https://arxiv.org/abs/2606.14832) · [中文 Blog](https://mp.weixin.qq.com/s/I2ztL6sFiHGxAiCfh_FTqg?scene=1) | Mixed-action phone-agent harness and benchmark across CLI, GUI, and MCP tools with trace-backed verification. |
+| **[Privacy]** | 🔐 [**PhonePrivacy**](https://github.com/FreedomIntelligence/MyPhoneBench) | [Code](https://github.com/FreedomIntelligence/MyPhoneBench) · [Paper](https://arxiv.org/abs/2604.00986) · [中文 Blog](https://mp.weixin.qq.com/s/0uqLRepCABA7ptOAPXjDZA) | Verifiable privacy benchmark for phone-use agents. |
+| **[Safety]** | 🛡️ [**PhoneSafety**](https://github.com/tangzhy/PhoneSafety) | [Code](https://github.com/tangzhy/PhoneSafety) · [Paper](https://arxiv.org/abs/2605.07630) | Safety evaluation for phone-use agents, separating safety from incapability. |
 
 ---
 
